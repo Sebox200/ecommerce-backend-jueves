@@ -14,7 +14,7 @@ class CategorySeeder extends Seeder
      * @return void
      */
     public function run()
-    {   
+    {
         $categoria_electro = new Category();
         $categoria_electro ->name =  "Electrodomestico";
         $categoria_electro -> description = "Esta es la categoria de electrodomesticos...";
@@ -22,7 +22,9 @@ class CategorySeeder extends Seeder
 
         $categoria_2 = new Category();
         $categoria_2 ->name =  "Ropa";
-        $categoria_2 -> description = "Esta es la categoria de ropa..." ;
+        $categoria_2 -> description = "Esta es la categoria de ropa...";
         $categoria_2 -> save();
     }
+
+    
 }
